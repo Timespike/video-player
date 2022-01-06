@@ -93,12 +93,12 @@ function toggleMute() {
         video.volume = 0;
         volumeBar.style.width = 0;
         volumeIcon.classList.add('fas', 'fa-volume-mute');
-        volume.setAttribute('title', 'Unmute');
+        volumeIcon.setAttribute('title', 'Unmute');
     } else {
         video.volume = lastVolume;
         volumeBar.style.width = `${lastVolume * 100}%`;
         volumeIcon.classList.add('fas', 'fa-volume-up');
-        volume.setAttribute('title', 'Mute');
+        volumeIcon.setAttribute('title', 'Mute');
     }
 }
 
